@@ -24,6 +24,18 @@ nav ul {
   background-color: $salmon;
 }
 
+.welcome h1,h2 {
+   -moz-animation-name: dropHeader;
+  -moz-animation-iteration-count: once;
+  -moz-animation-timing-function: ease-out;
+  -moz-animation-duration: 1.3s;
+
+  -webkit-animation-name: dropHeader;
+  -webkit-animation-iteration-count: once;
+  -webkit-animation-timing-function: ease-out;
+  -webkit-animation-duration: 1.3s;
+}
+
 .welcome h2 {
   padding-bottom: 50px;
   border-bottom: 1px solid $white;
@@ -45,5 +57,24 @@ section.example {
 .vertical-bottom {
   position: absolute;
   bottom: 76px;
-  left:45%;
+  left:48%;
+}
+
+-moz-keyframes dropHeader {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 100%;
+    }
+}
+@-webkit-keyframes dropHeader {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(-30px);
+    }
+    100% {
+        opacity: 100%;
+        -webkit-transform: translateY(0);
+    }
 }

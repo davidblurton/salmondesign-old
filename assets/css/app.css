@@ -3477,7 +3477,7 @@ h1, h2, h3, h4, h5, h6 {
   text-rendering: optimizeLegibility;
   margin-top: 0.2rem;
   margin-bottom: 0.5rem;
-  line-height: 1.4; }
+  line-height: 1.1; }
   h1 small, h2 small, h3 small, h4 small, h5 small, h6 small {
     font-size: 60%;
     color: #677a9a;
@@ -3637,7 +3637,7 @@ blockquote, blockquote p {
 
 @media only screen and (min-width:40.063em) {
   h1, h2, h3, h4, h5, h6 {
-    line-height: 1.4; }
+    line-height: 1.1; }
   h1 {
     font-size: 2.75rem; }
   h2 {
@@ -4509,6 +4509,16 @@ nav ul {
   height: 80%;
   background-color: #ff8079; }
 
+.welcome h1, h2 {
+  -moz-animation-name: dropHeader;
+  -moz-animation-iteration-count: once;
+  -moz-animation-timing-function: ease-out;
+  -moz-animation-duration: 1.3s;
+  -webkit-animation-name: dropHeader;
+  -webkit-animation-iteration-count: once;
+  -webkit-animation-timing-function: ease-out;
+  -webkit-animation-duration: 1.3s; }
+
 .welcome h2 {
   padding-bottom: 50px;
   border-bottom: 1px solid #ffe9de; }
@@ -4527,4 +4537,18 @@ section.example {
 .vertical-bottom {
   position: absolute;
   bottom: 76px;
-  left: 45%; }
+  left: 48%; }
+
+-moz-keyframes dropHeader 0% {
+  opacity: 0; }
+-moz-keyframes dropHeader 100% {
+  opacity: 100%; }
+
+@-webkit-keyframes dropHeader {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-30px); }
+
+  100% {
+    opacity: 100%;
+    -webkit-transform: translateY(0); } }
