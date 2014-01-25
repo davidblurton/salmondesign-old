@@ -4493,11 +4493,8 @@ th.hide-for-touch {
 html, body {
   height: 100%; }
 
-nav ul {
-  margin-left: 0; }
-
 .top-bar .name h1 a {
-  padding: 0; }
+  padding-left: 0.9375rem; }
 
 .graphic-designer {
   display: block;
