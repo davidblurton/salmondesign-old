@@ -3470,8 +3470,8 @@ p {
 
 /* Default header styles */
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Open Sans", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
-  font-weight: 200;
+  font-family: raleway, sans-serif;
+  font-weight: 300;
   font-style: normal;
   color: #303948;
   text-rendering: optimizeLegibility;
