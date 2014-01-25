@@ -29,10 +29,21 @@ nav ul {
   border-bottom: 1px solid $white;
 }
 
+section.example {
+  min-height: 100%;
+  padding-top: 100px;
+}
+
 .vertical-center {
   position: relative;
   top: 50%;
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
+}
+
+.vertical-bottom {
+  position: absolute;
+  bottom: 76px;
+  left:45%;
 }
