@@ -1,0 +1,30 @@
+@import "foundation/colours";
+
+html, body {
+  height: 100%;
+}
+
+.graphic-designer {
+  display: block;
+  line-height: 1em;
+  position: relative;
+  top: -28px;
+}
+
+.welcome {
+  height: 80%;
+  background-color: $salmon;
+}
+
+.welcome h2 {
+  padding-bottom: 50px;
+  border-bottom: 1px solid $white;
+}
+
+.vertical-center {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}

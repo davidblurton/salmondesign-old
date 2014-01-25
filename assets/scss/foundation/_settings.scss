@@ -36,7 +36,7 @@
 // $total-columns: 12;
 
 // We use these to control various global styles
-$body-bg: $salmon;
+$body-bg: $white;
 $body-font-color: $black;
 $body-font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
 $body-font-weight: normal;
@@ -1013,7 +1013,7 @@ $primary-color: $salmon;
 //$include-html-top-bar-classes: $include-html-classes;
 
 // Background color for the top bar
-$topbar-bg-color: rgba(0, 0, 0, 0);
+$topbar-bg-color: $primary-color;
 $topbar-bg: $topbar-bg-color;
 
 // Height and margin

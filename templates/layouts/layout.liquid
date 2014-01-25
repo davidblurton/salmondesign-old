@@ -10,17 +10,20 @@
 	</head>
 	<body>
       <div class="contain-to-grid">
-        <nav class="top-bar" data-topbar>
-          <div class="large-5 columns">
+        <nav class="top-bar hide-for-small" data-topbar>
+          <div class="large-4 columns">
             <ul>
               <li class="name">
                 <h1>
-                  <a href="/"><span class="text-black">Rachel Salmon</span>&nbsp;Graphic designer</a>
+                  <a href="/">
+                    <span class="text-black">Rachel Salmon</span>
+                    <span class="graphic-designer">Graphic designer</span>
+                  </a>
                 </h1>
               </li>
             </ul>
           </div>
-          <div class="large-7 columns">
+          <div class="large-8 columns">
             <section class="top-bar-section">
               <ul>
                 <li class="active"><a href="#">Work</a></li>
@@ -29,6 +32,12 @@
               </ul>
             </section>
           </div>
+        </nav>
+
+        <nav class="top-bar show-for-small">
+          <a class="left-off-canvas-toggle menu-icon">
+            <span></span>
+          </a>
         </nav>
       </div>
 		{% block content %}{% endblock %}
