@@ -4,11 +4,19 @@ html, body {
   height: 100%;
 }
 
+nav ul {
+ margin-left: 0;
+}
+
+.top-bar .name h1 a {
+  padding: 0;
+}
+
 .graphic-designer {
   display: block;
   line-height: 1em;
   position: relative;
-  top: -28px;
+  top: -25px;
 }
 
 .welcome {
