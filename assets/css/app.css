@@ -3865,8 +3865,8 @@ meta.foundation-mq-topbar {
       .top-bar-section ul li > a.button.alert:hover {
         background: #d4290f; }
   .top-bar-section ul li:hover > a {
-    background: #303948;
-    color: #ffe9de; }
+    background: #ff8079;
+    color: #303948; }
   .top-bar-section ul li.active > a {
     background: #ff8079;
     color: #ffe9de; }
@@ -3968,14 +3968,14 @@ meta.foundation-mq-topbar {
         .top-bar-section ul li .js-generated {
           display: none; }
     .top-bar-section li.hover > a:not(.button) {
-      background: #303948;
-      color: #ffe9de; }
+      background: #ff8079;
+      color: #303948; }
     .top-bar-section li:not(.has-form) a:not(.button) {
       padding: 0 26.66667px;
       line-height: 80px;
       background: #ff8079; }
       .top-bar-section li:not(.has-form) a:not(.button):hover {
-        background: #303948; }
+        background: #ff8079; }
     .top-bar-section .has-dropdown > a {
       padding-right: 46.66667px !important; }
       .top-bar-section .has-dropdown > a:after {
@@ -4040,8 +4040,8 @@ meta.foundation-mq-topbar {
       .top-bar-section .left li .dropdown li .dropdown {
         left: 100%; }
   .no-js .top-bar-section ul li:hover > a {
-    background: #303948;
-    color: #ffe9de; }
+    background: #ff8079;
+    color: #303948; }
   .no-js .top-bar-section ul li:active > a {
     background: #ff8079;
     color: #ffe9de; }
@@ -4496,6 +4496,44 @@ html, body {
 .top-bar .name h1 a {
   padding-left: 0.9375rem; }
 
+.top-bar-section ul {
+  background-color: #ff8079; }
+
+.top-bar-section li:not(.has-form) a:not(.button) {
+  padding: 0;
+  line-height: 1em;
+  margin-top: 30px; }
+
+.top-bar-section ul li {
+  background-color: #ff8079;
+  padding-bottom: 5px;
+  margin-left: 30px; }
+
+.top-bar-section ul li:nth-of-type(1) {
+  width: 45px; }
+
+.top-bar-section ul li:nth-of-type(2) {
+  width: 63px; }
+
+.top-bar-section ul li > a {
+  display: inline-block;
+  text-decoration: none;
+  border-bottom: 2px solid;
+  margin-right: 10px;
+  padding-bottom: 8px;
+  width: 0px;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+  padding: 0; }
+
+.top-bar-section ul li > a:hover {
+  display: inline-block;
+  text-decoration: none;
+  margin-right: 10px;
+  width: 100%;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease; }
+
 .graphic-designer {
   display: block;
   line-height: 1em;
@@ -4506,7 +4544,7 @@ html, body {
   height: 80%;
   background-color: #ff8079; }
 
-.welcome h1, h2 {
+.welcome h1, .welcome h2 {
   color: #fff;
   -moz-animation-name: dropHeader;
   -moz-animation-iteration-count: once;
@@ -4539,6 +4577,9 @@ section.example {
   position: absolute;
   bottom: 76px;
   left: 48%; }
+
+.pad-top {
+  padding-top: 100px; }
 
 -moz-keyframes dropHeader 0% {
   opacity: 0; }
