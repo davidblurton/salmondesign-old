@@ -3865,7 +3865,7 @@ meta.foundation-mq-topbar {
       .top-bar-section ul li > a.button.alert:hover {
         background: #d4290f; }
   .top-bar-section ul li:hover > a {
-    background: #272727;
+    background: #303948;
     color: #ffe9de; }
   .top-bar-section ul li.active > a {
     background: #ff8079;
@@ -3968,14 +3968,14 @@ meta.foundation-mq-topbar {
         .top-bar-section ul li .js-generated {
           display: none; }
     .top-bar-section li.hover > a:not(.button) {
-      background: #272727;
+      background: #303948;
       color: #ffe9de; }
     .top-bar-section li:not(.has-form) a:not(.button) {
       padding: 0 26.66667px;
       line-height: 80px;
       background: #ff8079; }
       .top-bar-section li:not(.has-form) a:not(.button):hover {
-        background: #272727; }
+        background: #303948; }
     .top-bar-section .has-dropdown > a {
       padding-right: 46.66667px !important; }
       .top-bar-section .has-dropdown > a:after {
@@ -4040,7 +4040,7 @@ meta.foundation-mq-topbar {
       .top-bar-section .left li .dropdown li .dropdown {
         left: 100%; }
   .no-js .top-bar-section ul li:hover > a {
-    background: #272727;
+    background: #303948;
     color: #ffe9de; }
   .no-js .top-bar-section ul li:active > a {
     background: #ff8079;
@@ -4507,6 +4507,7 @@ html, body {
   background-color: #ff8079; }
 
 .welcome h1, h2 {
+  color: #fff;
   -moz-animation-name: dropHeader;
   -moz-animation-iteration-count: once;
   -moz-animation-timing-function: ease-out;
@@ -4519,6 +4520,9 @@ html, body {
 .welcome h2 {
   padding-bottom: 50px;
   border-bottom: 1px solid #ffe9de; }
+
+.welcome h3 {
+  color: #ffe9de; }
 
 section.example {
   min-height: 100%;
