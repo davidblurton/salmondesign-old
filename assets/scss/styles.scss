@@ -21,7 +21,9 @@ html, body {
 }
 
 .welcome h1,h2 {
-   -moz-animation-name: dropHeader;
+  color: #fff;
+
+  -moz-animation-name: dropHeader;
   -moz-animation-iteration-count: once;
   -moz-animation-timing-function: ease-out;
   -moz-animation-duration: 1.3s;
@@ -35,6 +37,10 @@ html, body {
 .welcome h2 {
   padding-bottom: 50px;
   border-bottom: 1px solid $white;
+}
+
+.welcome h3 {
+  color: $white;
 }
 
 section.example {

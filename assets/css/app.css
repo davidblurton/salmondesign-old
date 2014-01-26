@@ -4507,6 +4507,7 @@ html, body {
   background-color: #ff8079; }
 
 .welcome h1, h2 {
+  color: #fff;
   -moz-animation-name: dropHeader;
   -moz-animation-iteration-count: once;
   -moz-animation-timing-function: ease-out;
@@ -4519,6 +4520,9 @@ html, body {
 .welcome h2 {
   padding-bottom: 50px;
   border-bottom: 1px solid #ffe9de; }
+
+.welcome h3 {
+  color: #ffe9de; }
 
 section.example {
   min-height: 100%;
