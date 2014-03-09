@@ -9,14 +9,19 @@
         <header class="photo-full-header">
             <h2>
                 <a href="{{url}}">{{{title}}}</a>
-            </h2>        
+            </h2>
+            {{#if tags}}
+            <section class="tags">
+                {{tags}}
+            </section>
+            {{/if}}
         </header>
-        
+
         <section class="photo-full-caption">
             {{content}}
         </section>       
     </article>    
     {{/post}}
-    
-    {{> footer}}
 </section>
+
+{{> footer }}
