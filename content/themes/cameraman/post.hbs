@@ -7,79 +7,16 @@
 
     <article class="{{post_class}} photo-full">
         <header class="photo-full-header">
-            <h2 style="text-align: center;">
+            <h2>
                 <a href="{{url}}">{{{title}}}</a>
             </h2>        
         </header>
-
-        <hr>
-
-        <section class="photo-post-information">
-            <i class="fa fa-clock-o"></i> <time datetime="{{date format='YYYY-MM-DD'}}">{{date format="MMMM DD, YYYY"}}</time>
-            {{#if tags}}
-            <span>/</span>
-            <i class="fa fa-tags"></i> {{tags}}
-            {{/if}}
-        </section>
         
         <section class="photo-full-caption">
             {{content}}
         </section>       
-
-        <hr>
-
-        <section class="photo-comments">
-            <div class="photo-comments-expander">
-                <i class="fa fa-comments-o"></i>
-                <span>Comments</span>
-            </div>
-            <div class="photo-comments-container">
-                <div id="disqus_thread"></div>
-                <script type="text/javascript">            
-                    {{> disqus-shortname}}
-
-                    (function() {
-                        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-                        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-                        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-                    })();
-                </script>
-                <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-                <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
-            </div>
-        </section>
     </article>    
-    
-    <section class="photo-full-info">
-        <div class="photo-full-info-inner">
-            <section class="author-profile">
-                <div class="author-image">
-                    <div class="author-image-inner" style="background-image: url({{author.image}});"></div> 
-                </div>
-                <div class="author-bio">
-                    <div class="author-name">{{author.name}}</div>                   
-                </div>
-            </section>  
-            
-            <section class="share-buttons">
-                Share
-                <a class="icon" style="margin-right: 1px;" href="http://twitter.com/share?text={{title}}&url={{url absolute="true"}}"
-                    onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
-                    <i class="fa fa-twitter fa-lg"></i>
-                </a>
-                <a class="icon" href="https://www.facebook.com/sharer/sharer.php?u={{url absolute="true"}}"
-                    onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
-                    <i class="fa fa-facebook fa-lg"></i>
-                </a>
-                <a class="icon" href="https://plus.google.com/share?url={{url absolute="true"}}"
-                   onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
-                    <i class="fa fa-google-plus fa-lg "></i>
-                </a>              
-            </section>  
-            
-            <div class="clearfix"></div> 
-        </div>
-    </section>
-
     {{/post}}
+    
+    {{> footer}}
 </section>
