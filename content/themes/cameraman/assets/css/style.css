@@ -118,7 +118,6 @@ BLOCKQUOTE {
             display: inline-block;
             margin: 0 5px;
             color: #333333;
-            text-transform: uppercase;
             font-weight: bold;
             -webkit-transition-duration: 0;
             -moz-transition-duration: 0;
@@ -352,7 +351,6 @@ BLOCKQUOTE {
             .share-buttons {
                 float: right;
                 color: #777777;
-                text-transform: uppercase;
                 letter-spacing: 2px;
                 font-size: 12px;
                 font-family: Tahoma, sans-serif;
@@ -387,7 +385,6 @@ BLOCKQUOTE {
             border-radius: 3px;
             background-color: #e0e0e0;
             color: #888888;
-            text-transform: uppercase;
             font-family: 'Roboto Slab', sans-serif; 
         }
 
