@@ -182,8 +182,7 @@ h6 {
     font-weight: normal;
 }
 .photo-thumbnail-overlay-inner HR {
-    margin: 15px auto;
-    width: 50%;
+    margin: 15px 0;
     border: 1px solid #eaeaea;
 }
 .photo-thumbnail-overlay-caption {
