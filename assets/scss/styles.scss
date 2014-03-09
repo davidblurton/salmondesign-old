@@ -12,62 +12,20 @@ html, body {
   background-color: $salmon;
 }
 
-.top-bar-section li:not(.has-form) a:not(.button) {
-  padding: 0;
-  line-height: 1em;
-  margin-top: 30px;
-}
-
-.top-bar-section ul li {
-  background-color: $salmon;
-  padding-bottom: 5px;
-  margin-left: 30px;
-}
-
-.top-bar-section ul li:nth-of-type(1) {
-width: 45px;
-}
-
-.top-bar-section ul li:nth-of-type(2) {
-width: 63px;
-}
-
-
-.top-bar-section ul li>a {
-  display: inline-block;
-  text-decoration: none;
-  border-bottom: 2px solid;
-  margin-right: 10px;
-  padding-bottom: 8px;
-  width: 0px;
-  -webkit-transition: 0.5s ease;
-  transition: 0.5s ease;
-  padding: 0;
-}
-
-.top-bar-section ul li>a:hover {
-  display: inline-block;
-  text-decoration: none;
-  margin-right: 10px;
-  width: 100%;
-  -webkit-transition: 0.5s ease;
-  transition: 0.5s ease;
-}
-
-.graphic-designer {
-  display: block;
-  line-height: 1em;
-  position: relative;
-  top: -25px;
+.name img {
+  padding-top: 10px;
+  padding-left: .9375rem;
 }
 
 .welcome {
-  height: 80%;
   background-color: $salmon;
+  color: #fff;
+  padding: 5em 0;
 }
 
 .welcome h1, .welcome h2 {
   color: #fff;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
 
   -moz-animation-name: dropHeader;
   -moz-animation-iteration-count: once;
@@ -81,7 +39,7 @@ width: 63px;
 }
 
 .welcome h2 {
-  padding-bottom: 50px;
+  padding-bottom: 1em;
   border-bottom: 1px solid $white;
 }
 
@@ -91,25 +49,31 @@ width: 63px;
 
 section.example {
   min-height: 100%;
-  padding-top: 100px;
+  padding: 5em 0;
 }
 
-.vertical-center {
-  position: relative;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
+section.cream {
+  background-color: $white;
 }
 
-.vertical-bottom {
-  position: absolute;
-  bottom: 76px;
-  left:48%;
+section.page {
+  margin-top: 1em;
+  padding: 5em 0;
+  min-height: 100%;
+  background-color: #fff;
+}
+
+.example img {
+  padding-top: 1em;
 }
 
 .pad-top {
   padding-top: 100px;
+}
+
+footer {
+  color: rgba(255, 255, 255, 0.5);
+  padding: 1em 0;
 }
 
 -moz-keyframes dropHeader {

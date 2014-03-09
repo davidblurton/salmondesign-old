@@ -6,19 +6,14 @@
 		<title>salmondesign.co</title>
   		{{ "app.css" | asset_url | stylesheet_tag }}
   		<script src="{{ "modernizr.js" | asset_url }}"></script>
-        <script src="//use.edgefonts.net/raleway.js"></script>
+        <script src="//use.edgefonts.net/raleway;lora.js"></script>
 	</head>
 	<body>
       <div class="contain-to-grid">
         <nav class="top-bar hide-for-small" data-topbar>
           <ul class="title-area">
             <li class="name">
-              <h1>
-                <a href="/">
-                  <span>Rachel Salmon</span>
-                  <span class="graphic-designer text-white">Graphic designer</span>
-                </a>
-              </h1>
+              <a href="/"><img src="assets/images/logo.png" /></a>
             </li>
           </ul>
 
@@ -37,6 +32,7 @@
         </nav>
       </div>
 		{% block content %}{% endblock %}
+        {% include "footer" %}
   		{% include "scripts" %}
 	</body>
 </html>
