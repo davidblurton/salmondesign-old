@@ -78,7 +78,8 @@ BLOCKQUOTE {
             display: block;
             height: 70px;
             background-position: center center;
-            background-size: cover;
+            background-size: contain;
+            background-repeat:no-repeat;
         }
 
     .header H1 {
