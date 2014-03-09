@@ -47,6 +47,10 @@ BLOCKQUOTE {
     clear: both;
 }
 
+h1, h2, h3, h4, h5, h6 {
+    font-weight: normal;
+}
+
 /* Header
 ---------------------------------------- */
 .header {
@@ -91,7 +95,7 @@ BLOCKQUOTE {
     .header H2 {
         float: left;
         margin: 0 0 0 20px;
-        padding: 2px 0 0 0;
+        padding: 3px 0 0 0;
         font-weight: normal;
         color: #666;
     }
