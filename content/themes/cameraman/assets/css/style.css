@@ -95,11 +95,9 @@ BLOCKQUOTE {
     .header H2 {
         float: left;
         margin: 0 0 0 20px;
-        padding: 0;
+        padding: 2px 0 0 0;
         font-weight: normal;
-        font-style: italic;
-        font-size: 17px;
-        font-family: Georgia, serif;
+        color: #666;
     }
 
     .header .social-links {
