@@ -32,7 +32,7 @@ projectFilesBackup
 .dist
 
 /core/client/tpl/hbs-tpl.js
-/core/client/assets/css
+# /core/client/assets/css
 .sass-cache/
 /core/client/assets/vendor
 /core/client/assets/sass/config.rb
@@ -58,7 +58,7 @@ CHANGELOG.md
 /core/test/functional/*.png
 
 # Built asset files
-/core/built
+# /core/built
 
 # Coverage reports
 coverage.html
