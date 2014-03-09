@@ -1,0 +1,17 @@
+<header class="header">
+	{{#if @blog.logo}}
+	<div class="blog-logo">
+		<div class="blog-logo-inner" style="background-image: url({{@blog.logo}});"></div> 
+	</div>
+	{{/if}}
+
+	<h1 class="blog-title">
+		<a href="{{@blog.url}}">{{@blog.title}}</a>
+	</h1>
+
+	<h2 class="blog-description">&mdash; {{@blog.description}}</h2>
+
+	{{> social-links}}
+
+	{{> static-pages}}
+</header>

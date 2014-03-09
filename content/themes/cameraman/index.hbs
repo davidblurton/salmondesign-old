@@ -1,0 +1,37 @@
+{{!< default}}
+
+{{> header}}
+	
+<section class="photos">
+	{{#foreach posts}}
+
+	<article class="{{post_class}} photo-thumbnail">
+		<div class="photo-content-temp">{{content}}</div>
+		<div class="photo-thumbnail-loading-progress">
+			<div class="spinner">
+				<div class="rect1"></div>
+				<div class="rect2"></div>
+				<div class="rect3"></div>
+				<div class="rect4"></div>
+				<div class="rect5"></div>
+			</div>
+		</div>
+		<div class="photo-thumbnail-overlay">
+			<a href="{{url}}">
+				<div class="photo-thumbnail-overlay-inner">
+					<h2 class="photo-thumbnail-overlay-title">{{title}}</h2>
+					<hr>
+					<div class="photo-thumbnail-overlay-caption">
+						{{excerpt words="40"}}...
+					</div>
+				</div>	
+			</a>		
+		</div>		
+	</article>
+	
+	{{/foreach}}		
+</section>
+
+{{pagination}}
+
+{{> footer}}

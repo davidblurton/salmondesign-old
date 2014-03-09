@@ -1,0 +1,25 @@
+{{!< default}}
+
+{{> header}}	
+
+<section class="photos">
+    {{#post}}
+
+    <article class="{{post_class}} photo-full">
+        <header class="photo-full-header">
+            <h2 style="text-align: center;">
+                <a href="{{url}}">{{{title}}}</a>
+            </h2>        
+        </header>
+
+        <hr>
+        
+        <section class="photo-full-caption">
+            {{content}}
+        </section>
+    </article>    
+    
+    {{> footer}}
+
+    {{/post}}
+</section>
