@@ -194,7 +194,7 @@ h6 {
 .photo-full {
     margin: 0 auto;
     padding-top: 25px;
-    max-width: 70%;
+    max-width: 960px;
 }
 .photo-full-header H2 {
     margin: 0;
