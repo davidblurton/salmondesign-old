@@ -19,7 +19,6 @@ PRE {
     font-family: Consolas, monospace;
 }
 A {
-    display: inline-block;
     color: #008ACE;
     text-decoration: none;
 }
