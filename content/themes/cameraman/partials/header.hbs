@@ -1,15 +1,11 @@
 <header class="header">
 	{{#if @blog.logo}}
 	<div class="blog-logo">
-		<div class="blog-logo-inner" style="background-image: url({{@blog.logo}});"></div> 
+        <a href="{{@blog.url}}">
+		  <div class="blog-logo-inner" style="background-image: url({{@blog.logo}});"></div> 
+        </a>
 	</div>
 	{{/if}}
-
-	<h1 class="blog-title">
-		<a href="{{@blog.url}}">{{@blog.title}}</a>
-	</h1>
-
-	<h2 class="blog-description">{{@blog.description}}</h2>
 
 	{{> static-pages}}
 </header>
