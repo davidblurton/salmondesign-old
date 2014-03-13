@@ -19,7 +19,7 @@ $(document).ready(function() {
         var image = $(this).find('.photo-content-temp img[alt="featured"]')
         
         if(!image){
-            image = $(this).find('.photo-content-temp img:first-of-type');
+            image = $(this).find('.photo-content-temp img').first();
         }
         
         var image_src = image.attr('src');
