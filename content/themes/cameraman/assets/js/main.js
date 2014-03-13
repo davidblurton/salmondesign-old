@@ -15,7 +15,7 @@ $.fn.clicktoggle = function(a, b) {
 };
 
 $(document).ready(function() {
-    $('.photo-thumbnail .photo-content-temp img:first-of-type').each(function() {     
+    $('.photo-thumbnail .photo-content-temp img[alt="featured"').each(function() {     
         var image_src = $(this).attr('src');
         var thumbnail = $(this).closest('.photo-thumbnail');
         var load_spinner = $(thumbnail).children('.photo-thumbnail-loading-progress');
