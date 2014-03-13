@@ -13,7 +13,6 @@
         display: block;
         float: none;
         margin: 0;
-        padding: 10px 0;
     }
 
     .photos {
@@ -34,6 +33,7 @@
         max-width: 100%;
         width: 100%;
         background: none;
+        display: none;
     }
     
     .photo-thumbnail-overlay h2 {
