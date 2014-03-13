@@ -16,7 +16,11 @@ $.fn.clicktoggle = function(a, b) {
 
 $(document).ready(function() {
     $('.photo-thumbnail').each(function() {
-        var image = $(this).find('.photo-content-temp img[alt="featured"]') || $(this).find('.photo-content-temp img:first-of-type');
+        var image = $(this).find('.photo-content-temp img[alt="featured"]')
+        
+        if(!image){
+            image = $(this).find('.photo-content-temp img:first-of-type');
+        }
         
         var image_src = $(image).attr('src');
         var thumbnail = $(image).closest('.photo-thumbnail');
