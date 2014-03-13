@@ -1,11 +1,10 @@
 @media screen and (max-width: 960px) {
     .header {
         position: relative;
-        padding: 20px 0 25px 0;
+        padding: 20px 0 25px 20px;
         width: 100%;
         height: initial;
         border-bottom: 1px solid #ccc;
-        text-align: center;
         line-height: initial;
     }
 
@@ -13,6 +12,15 @@
         display: block;
         float: none;
         margin: 0;
+    }
+    
+    .header .static-pages {
+        margin: 20px 0 0 0;
+    }
+    
+    .header .blog-logo {
+        margin-top: 0;
+        margin-left 0;
     }
 
     .photos {
