@@ -23,26 +23,33 @@
     .photo-thumbnail {
         display: block;
         float: none;
-        margin: 10px;
+        margin: 0;
         max-width: 960px;
         width: initial;
         height: 300px;
-        border-radius: 3px;
-        text-align: center;
     }
 
     .photo-thumbnail-overlay {
         display: inline-block;
         max-width: 100%;
+        width: 100%;
         background: none;
-        -webkit-box-shadow: none;
-        box-shadow: none;
+    }
+    
+    .photo-thumbnail-overlay h2 {
+        display: inline-block;
+        background: rgba(0, 0, 0, 0.5);
+        padding: 10px;
     }
 
     .photo-thumbnail-overlay-inner {
         position: relative;
         display: inline-block;
         border: none;
+    }
+    
+    .photo-thumbnail-overlay-inner hr {
+        display: none;
     }
 
     .photo-thumbnail-overlay-caption {
