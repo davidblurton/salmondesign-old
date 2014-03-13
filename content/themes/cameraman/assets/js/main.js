@@ -22,8 +22,8 @@ $(document).ready(function() {
             image = $(this).find('.photo-content-temp img:first-of-type');
         }
         
-        var image_src = $(image).attr('src');
-        var thumbnail = $(image).closest('.photo-thumbnail');
+        var image_src = image.attr('src');
+        var thumbnail = image.closest('.photo-thumbnail');
         var load_spinner = $(thumbnail).children('.photo-thumbnail-loading-progress');
         var post_content = $(thumbnail).children('.photo-content-temp');
         
