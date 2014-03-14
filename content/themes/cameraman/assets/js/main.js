@@ -16,7 +16,7 @@ $.fn.clicktoggle = function(a, b) {
 
 $(document).ready(function() {
     $('.photo-thumbnail .photo-content-temp').each(function() {
-        var image = $(this).find('img[alt="featured"], img:first-of-type');
+        var image = $(this).find('img[alt="featured"], img:first-of-type')[0];
         var image_src = $(image).attr('src');
         var thumbnail = $(image).closest('.photo-thumbnail');
         var load_spinner = $(thumbnail).children('.photo-thumbnail-loading-progress');
