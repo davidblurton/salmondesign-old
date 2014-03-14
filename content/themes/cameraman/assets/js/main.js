@@ -15,15 +15,9 @@ $.fn.clicktoggle = function(a, b) {
 };
 
 $(document).ready(function() {
-    $('.photo-thumbnail').each(function() {
-        var image = $(this).find('.photo-content-temp img[alt="featured"]')
-        
-        if(!image){
-            image = $(this).find('.photo-content-temp img').first();
-        }
-        
-        var image_src = image.attr('src');
-        var thumbnail = image.closest('.photo-thumbnail');
+    $('.photo-thumbnail .photo-content-temp img[alt="featured"], img:first-of-type').each(function() {     
+        var image_src = $(this).attr('src');
+        var thumbnail = $(this).closest('.photo-thumbnail');
         var load_spinner = $(thumbnail).children('.photo-thumbnail-loading-progress');
         var post_content = $(thumbnail).children('.photo-content-temp');
         
