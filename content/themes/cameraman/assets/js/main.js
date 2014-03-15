@@ -22,10 +22,9 @@ $(document).ready(function() {
         var post_content = $(thumbnail).children('.photo-content-temp');
         
         var temp_image = new Image();
-        temp_image.src = image_src;
-        var height = temp_image.height / temp_image.width * thumbnail.width();
-        
+        temp_image.src = image_src;        
         temp_image.onload = function() {
+            var height = temp_image.height / temp_image.width * thumbnail.width();
             $(load_spinner).remove();
             $(post_content).remove();
             $(thumbnail).css({'opacity': 0, 'background-image': 'url(' + image_src + ')', 'height': height}).animate({ opacity: 1 }, { duration: 500 });
