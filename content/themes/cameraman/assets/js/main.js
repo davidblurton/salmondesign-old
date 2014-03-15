@@ -15,30 +15,22 @@ $.fn.clicktoggle = function(a, b) {
 };
 
 $(document).ready(function() {
-    $('.photo-thumbnail .photo-content-temp').each(function() {
-        var image = $(this).find('img[alt="featured"], img:first-of-type')[0];
-        var image_src = $(image).attr('src');
-        var thumbnail = $(image).closest('.photo-thumbnail');
+    $('.photo-content-temp img:first-of-type').each(function() {
+        var image_src = $(this).attr('src');
+        var thumbnail = $(this).closest('.photo-thumbnail');
         var load_spinner = $(thumbnail).children('.photo-thumbnail-loading-progress');
         var post_content = $(thumbnail).children('.photo-content-temp');
         
         var temp_image = new Image();
         temp_image.src = image_src;
+        var height = temp_image.height / temp_image.width * thumbnail.width();
+        console.log(height);
         temp_image.onload = function() {
             $(load_spinner).remove();
             $(post_content).remove();
-            $(thumbnail).css({'opacity': 0, 'background-image': 'url(' + image_src + ')'}).animate({ opacity: 1 }, { duration: 500 });
+            $(thumbnail).css({'opacity': 0, 'background-image': 'url(' + image_src + ')', 'height': height}).animate({ opacity: 1 }, { duration: 500 });
         };
     });
-
-	$('.photo-thumbnail').hover(
-		function() {
-			$(this).children('.photo-thumbnail-overlay').fadeIn(300);
-		},
-		function() {
-			$(this).children('.photo-thumbnail-overlay').hide();
-		}
-	);
 
 	$('.photo-full-caption img').each(function() {
 		var imageSrc = $(this).attr('src');

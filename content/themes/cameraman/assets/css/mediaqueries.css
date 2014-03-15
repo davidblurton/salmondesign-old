@@ -31,7 +31,7 @@
         display: block;
         float: none;
         margin: 0;
-        max-width: 960px;
+        max-width: 100%;
         width: initial;
         height: 300px;
     }
