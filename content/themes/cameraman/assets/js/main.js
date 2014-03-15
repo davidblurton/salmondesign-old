@@ -24,7 +24,7 @@ $(document).ready(function() {
         var temp_image = new Image();
         temp_image.src = image_src;
         var height = temp_image.height / temp_image.width * thumbnail.width();
-        console.log(height);
+        
         temp_image.onload = function() {
             $(load_spinner).remove();
             $(post_content).remove();
