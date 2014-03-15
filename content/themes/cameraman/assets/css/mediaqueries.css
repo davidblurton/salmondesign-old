@@ -1,4 +1,10 @@
 @media screen and (max-width: 960px) {
+    .column .columns {
+        float: none;
+        display: block;
+        margin: 0 auto;
+    }
+    
     .header {
         position: relative;
         padding: 20px 0 25px 20px;
