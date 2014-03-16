@@ -7,7 +7,7 @@
 ---------------------------------------- */
 
 BODY {
-    background-color: #f4f4f4;
+    background-color: #fcfcfc;
     font-family: raleway, sans-serif;
 }
 PRE {
@@ -137,6 +137,7 @@ h6 {
 
 article.post {
     padding: 50px 0;
+    border-bottom: 1px solid #eee;
 }
 
 .post-title {
