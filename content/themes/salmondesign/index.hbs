@@ -9,9 +9,7 @@
         <div class="container">
             <div class="row">
                 <div class="large-6 columns">
-                    <a href="{{url}}">
-                        <div class="photo-thumbnail"></div>
-                    </a>
+                    <div class="photo-thumbnail"></div>
                     <div class="photo-content-temp">{{content}}</div>
                     <div class="photo-thumbnail-loading-progress">
                     <div class="spinner">
@@ -29,8 +27,9 @@
                         <h2 class="post-title">{{title}}</h2>
                     </a>
                     <p>
-                        {{excerpt words=30}}&hellip;
-                    </p>	
+                        {{excerpt words=30}}
+                    </p>
+                    <a href="{{url}}">more</a>
                 </div>
             </div>
         </div>		
