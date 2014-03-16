@@ -54,7 +54,7 @@ var path           = require('path'),
                     tasks: ['handlebars']
                 },
                 sass: {
-                    files: ['<%= paths.adminAssets %>/sass/**/*'],
+                    files: ['<%= paths.adminAssets %>/sass/**/*', 'content/themes/salmondesign/assets/sass/**/*'],
                     tasks: ['sass:admin']
                 },
                 concat: {
@@ -307,12 +307,14 @@ var path           = require('path'),
             sass: {
                 admin: {
                     files: {
-                        '<%= paths.adminAssets %>/css/screen.css': '<%= paths.adminAssets %>/sass/screen.scss'
+                        '<%= paths.adminAssets %>/css/screen.css': '<%= paths.adminAssets %>/sass/screen.scss',
+                        'content/themes/salmondesign/assets/css/main.css': 'content/themes/salmondesign/assets/sass/main.scss'
                     }
                 },
                 compress: {
                     options: {
-                        style: 'compressed'
+                        style: 'compressed',
+                        sourcemap: true
                     },
                     files: {
                         '<%= paths.adminAssets %>/css/screen.css': '<%= paths.adminAssets %>/sass/screen.scss'
