@@ -313,8 +313,7 @@ var path           = require('path'),
                 },
                 compress: {
                     options: {
-                        style: 'compressed',
-                        sourcemap: true
+                        style: 'compressed'
                     },
                     files: {
                         '<%= paths.adminAssets %>/css/screen.css': '<%= paths.adminAssets %>/sass/screen.scss'
